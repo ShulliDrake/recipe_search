@@ -1,4 +1,7 @@
 # Django settings for recipe_search project.
+import os
+
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -119,6 +122,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'django_assets',
     'search'
 )
 
@@ -150,3 +154,7 @@ LOGGING = {
         },
     }
 }
+
+# django-assets
+ASSETS_DEBUG = True
+ASSETS_ROOT = os.path.join(PROJECT_ROOT, 'search/static')

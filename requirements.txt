@@ -1,0 +1,10 @@
+Django==1.5.1
+cssmin==0.1.4
+distribute==0.6.31
+dj-database-url==0.2.1
+django-assets==0.8
+gunicorn==0.17.2
+jsmin==2.0.2-1
+psycopg2==2.5
+webassets==0.8
+wsgiref==0.1.2
