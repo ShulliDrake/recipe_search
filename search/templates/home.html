@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+  <section id="tagline">
+    <h1>What should I cook tonight?</h1>
+  </section>
+
+  <section id="search">
+    <form>
+      <input class="q" type="text" name="q" values="" placeholder="{% trans 'Find recipe!' %}" autocomplete="off" />
+      <button>Search!</button>
+    </form>
+  </section>
+{% endblock %}

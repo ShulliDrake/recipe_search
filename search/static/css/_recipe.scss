@@ -4,6 +4,11 @@
 }
 body {
   font-family:Arial,Helvetica,sans-serif;
+  font-size:1em;
+  background-image:url('/static/img/radish.jpg'), url('/static/img/pear.jpg');
+  background-repeat:no-repeat, no-repeat;
+  background-position:right top, left bottom;
+  background-attachment:fixed;
 }
 a {
   color:#FA5858;
@@ -15,4 +20,53 @@ a:active {
 }
 ul, ol {
   list-style:none;
+}
+h1, h2 {
+  color:#FA5858;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-shadow:#6E6E6E 0.1em 0.1em 0.1em;
+  margin-bottom:10px;
+}
+h2 {
+  font-size:1em;
+}
+input {
+  padding:3px 5px;
+}
+
+/****************/
+#container {
+  width:900px;
+  max-width:1200px;
+}
+
+#tagline {
+  margin:30px 0 0 110px;
+}
+
+#search {
+  width:350px;
+  padding:0 10px;
+  margin:0 0 20px 100px;
+
+  input.q {
+    width:250px;
+    font-size:0.9em;
+  }
+
+  button {
+    color:#fff;
+    text-shadow: 2px 1px 1px rgba(0,0,0,.7);
+    font-size:0.9em;
+    font-weight:bold;
+    border:1px solid #fdfdfd;
+    border-radius:5px;
+    padding:5px;
+    background: #82FA58;
+    background: -webkit-gradient(linear, left top, left bottom, from(#82FA58), to(#5FB404));
+    background: -webkit-linear-gradient(top, #82FA58, #5FB404);
+    background: -moz-linear-gradient(top, #82FA58, #5FB404);
+    background: -ms-linear-gradient(top, #82FA58, #5FB404);
+    background: -o-linear-gradient(top, #82FA58, #5FB404);
+  }
 }
