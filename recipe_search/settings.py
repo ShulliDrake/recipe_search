@@ -1,5 +1,6 @@
 # Django settings for recipe_search project.
 import os
+from search.app_settings import *
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
 
