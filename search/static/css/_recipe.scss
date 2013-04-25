@@ -38,6 +38,10 @@ input {
 #container {
   width:900px;
   max-width:1200px;
+
+  section {
+    margin-left:30px;
+  }
 }
 
 #tagline {
@@ -61,12 +65,50 @@ input {
     font-weight:bold;
     border:1px solid #fdfdfd;
     border-radius:5px;
-    padding:5px;
+    padding:5px 7px;
     background: #82FA58;
     background: -webkit-gradient(linear, left top, left bottom, from(#82FA58), to(#5FB404));
     background: -webkit-linear-gradient(top, #82FA58, #5FB404);
     background: -moz-linear-gradient(top, #82FA58, #5FB404);
     background: -ms-linear-gradient(top, #82FA58, #5FB404);
     background: -o-linear-gradient(top, #82FA58, #5FB404);
+  }
+}
+
+#result {
+  padding:10px;
+  border-radius:12px;
+  font-size:0.8em;
+  color:#333;
+
+  ul {
+    overflow:auto;
+  }
+  li {
+    width:380px;
+    background: rgb(255, 255, 255) transparent; /* default fallback */
+    background: rgba(255, 255, 255, 0.8); /* nice browsers */
+    border:1px solid #999;
+    border-radius:7px;
+    margin:0 10px 10px 0;
+    padding: 10px;
+    float:left;
+
+    a {
+      float:left;
+      margin-right:5px;
+    }
+  }
+
+  .name {
+    color:#DF3C3C;
+    font-weight:bold;
+    text-shadow:#ccc 1px 1px;
+  }
+  .source {
+    margin-top:3px;
+    font-size:0.8em;
+  }
+  .rating {
   }
 }

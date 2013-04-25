@@ -7,8 +7,15 @@
 
   <section id="search">
     <form>
-      <input class="q" type="text" name="q" values="" placeholder="{% trans 'Find recipe!' %}" autocomplete="off" />
-      <button>Search!</button>
+      <input id="keywords" class="q" type="text" name="q" values="" placeholder="{% trans 'Find recipe!' %}" autocomplete="off" />
+      <button type="submit">Search!</button>
     </form>
   </section>
+
+  <section id="result">
+  </section>
+{% endblock %}
+
+{% block templates %}
+  {% include "recipe_list_template.html" %}
 {% endblock %}

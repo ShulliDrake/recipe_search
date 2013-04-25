@@ -1,0 +1,11 @@
+<script type="text/template" id="recipeListTemplate">
+  <ul>
+    <% _.each(recipes, function(item){ %>
+    <li><a><img src="<%= item.smallImageUrls[0] %>" /></a>
+      <div class="name"><%= item.recipeName %></div>
+      <div class="source">Source: <%= item.sourceDisplayName %></div>
+      <div class="rating"><%= item.rating %></div>
+    </li>
+    <% }); %>
+  </ul>
+</script>

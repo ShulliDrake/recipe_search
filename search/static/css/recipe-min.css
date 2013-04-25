@@ -49,24 +49,28 @@ input {
   width: 900px;
   max-width: 1200px;
 }
+/* line 42 */
+#container section {
+  margin-left: 30px;
+}
 
-/* line 43 */
+/* line 47 */
 #tagline {
   margin: 30px 0 0 110px;
 }
 
-/* line 47 */
+/* line 51 */
 #search {
   width: 350px;
   padding: 0 10px;
   margin: 0 0 20px 100px;
 }
-/* line 52 */
+/* line 56 */
 #search input.q {
   width: 250px;
   font-size: 0.9em;
 }
-/* line 57 */
+/* line 61 */
 #search button {
   color: #fff;
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
@@ -74,11 +78,52 @@ input {
   font-weight: bold;
   border: 1px solid #fdfdfd;
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 7px;
   background: #82FA58;
   background: -webkit-gradient(linear, left top, left bottom, from(#82fa58), to(#5fb404));
   background: -webkit-linear-gradient(top, #82fa58, #5fb404);
   background: -moz-linear-gradient(top, #82fa58, #5fb404);
   background: -ms-linear-gradient(top, #82fa58, #5fb404);
   background: -o-linear-gradient(top, #82fa58, #5fb404);
+}
+
+/* line 78 */
+#result {
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  color: #333;
+}
+/* line 84 */
+#result ul {
+  overflow: auto;
+}
+/* line 87 */
+#result li {
+  width: 380px;
+  background: white transparent;
+  /* default fallback */
+  background: rgba(255, 255, 255, 0.8);
+  /* nice browsers */
+  border: 1px solid #999999;
+  border-radius: 7px;
+  margin: 0 10px 10px 0;
+  padding: 10px;
+  float: left;
+}
+/* line 97 */
+#result li a {
+  float: left;
+  margin-right: 5px;
+}
+/* line 103 */
+#result .name {
+  color: #DF3C3C;
+  font-weight: bold;
+  text-shadow: #cccccc 1px 1px;
+}
+/* line 108 */
+#result .source {
+  margin-top: 3px;
+  font-size: 0.8em;
 }
