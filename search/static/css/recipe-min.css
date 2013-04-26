@@ -97,33 +97,53 @@ input {
 /* line 84 */
 #result ul {
   overflow: auto;
+  padding: 15px 0 0 15px;
 }
-/* line 87 */
+/* line 88 */
 #result li {
   width: 380px;
   background: white transparent;
-  /* default fallback */
+  /* fallback */
   background: rgba(255, 255, 255, 0.8);
   /* nice browsers */
-  border: 1px solid #999999;
-  border-radius: 7px;
-  margin: 0 10px 10px 0;
+  box-shadow: 0 0 5px #ff6666;
+  border-radius: 20px;
+  margin: 0 15px 15px 0;
   padding: 10px;
   float: left;
 }
-/* line 97 */
+/* line 99 */
 #result li a {
   float: left;
   margin-right: 5px;
 }
-/* line 103 */
-#result .name {
+/* line 105 */
+#result .board {
+  min-height: 60px;
+  padding: 10px;
+  font-size: 0.9em;
+}
+/* line 111 */
+#result .board .name {
   color: #DF3C3C;
+  font-size: 1.3em;
+  font-style: italic;
   font-weight: bold;
   text-shadow: #cccccc 1px 1px;
+  padding-bottom: 5px;
+  margin-top: -3px;
 }
-/* line 108 */
-#result .source {
+/* line 120 */
+#result .board .source {
   margin-top: 3px;
-  font-size: 0.8em;
+}
+/* line 125 */
+#result .board .ingredients {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 130 */
+#result .board .label {
+  font-weight: bold;
 }

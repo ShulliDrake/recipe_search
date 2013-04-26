@@ -83,14 +83,16 @@ input {
 
   ul {
     overflow:auto;
+    padding:15px 0 0 15px;
   }
   li {
     width:380px;
-    background: rgb(255, 255, 255) transparent; /* default fallback */
+    background: rgb(255, 255, 255) transparent; /* fallback */
     background: rgba(255, 255, 255, 0.8); /* nice browsers */
-    border:1px solid #999;
-    border-radius:7px;
-    margin:0 10px 10px 0;
+//    border:1px solid #FF6666;
+    box-shadow:0 0 5px #ff6666;
+    border-radius:20px;
+    margin:0 15px 15px 0;
     padding: 10px;
     float:left;
 
@@ -100,15 +102,34 @@ input {
     }
   }
 
-  .name {
-    color:#DF3C3C;
-    font-weight:bold;
-    text-shadow:#ccc 1px 1px;
-  }
-  .source {
-    margin-top:3px;
-    font-size:0.8em;
-  }
-  .rating {
+  .board {
+    min-height:60px;
+    padding:10px;
+    font-size:0.9em;
+
+
+    .name {
+      color:#DF3C3C;
+      font-size:1.3em;
+      font-style:italic;
+      font-weight:bold;
+      text-shadow:#ccc 1px 1px;
+      padding-bottom:5px;
+      margin-top:-3px;
+    }
+    .source {
+      margin-top:3px;
+    }
+    .rating {
+    }
+    .ingredients {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .label {
+      font-weight:bold;
+    }
+
   }
 }
