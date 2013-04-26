@@ -3,12 +3,12 @@
   <ul>
     <% _.each(recipes, function(item){ %>
     <li>
-      <div class="board">
         <a><img src="<%= item.smallImageUrls[0] %>" /></a>
+      <div class="board">
         <div class="name"><%= item.recipeName %></div>
         <div class="ingredients"><span class="label">{% trans "Ingredients:" %}</span> <%= item.ingredients%></div>
         <div class="source"><span class="label">{% trans "From:"%}</span> <%= item.sourceDisplayName %></div>
-        <div class="rating"><%= item.rating %></div>
+        <div class="rating"><span class="star<%= item.rating %>"></span></div>
       </div>
     </li>
     <% }); %>

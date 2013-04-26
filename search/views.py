@@ -20,7 +20,7 @@ def api(request):
     api_url_base = settings.API_URL
 
 
-    r = requests.get(api_url_base % "q=shrimp")
+    r = requests.get(api_url_base % "q=american")
 
     recipes = r.json().get("matches")
 

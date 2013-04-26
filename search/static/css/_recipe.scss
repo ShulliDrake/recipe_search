@@ -98,11 +98,14 @@ input {
 
     a {
       float:left;
+      margin-top:8px;
       margin-right:5px;
     }
   }
 
   .board {
+    display:inline-block;
+    width:250px;
     min-height:60px;
     padding:10px;
     font-size:0.9em;
@@ -121,6 +124,25 @@ input {
       margin-top:3px;
     }
     .rating {
+      padding-top:5px;
+      span {
+        display:block;
+        width:76px;
+        height:17px;
+        background:url('/static/img/stars.png') no-repeat;
+      }
+      .star4 {
+        background-position:center -17px;
+      }
+      .star3 {
+        background-position:center -32px;
+      }
+      .star2 {
+        background-position:center -48px;
+      }
+      .star1 {
+        background-position:center -64px;
+      }
     }
     .ingredients {
       white-space: nowrap;
