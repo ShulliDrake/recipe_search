@@ -18,5 +18,6 @@ urlpatterns = patterns('',
     # url(r'^admin/', include(admin.site.urls)),
 
     url(r'^$', 'search.views.search'),
+    url(r'^recipe_api$', 'search.views.recipe_api'),
     url(r'^api$', 'search.views.api')
 )

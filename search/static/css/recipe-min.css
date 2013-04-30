@@ -178,10 +178,36 @@ input {
   font-weight: bold;
 }
 
-/* line 159 */
+/* fancybox */
+/* line 160 */
 .fancybox-overlay {
-  background: white transparent;
+  background: black transparent;
   /* fallback */
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   /* nice browsers */
+}
+
+/* line 165 */
+.fancybox-skin .heading {
+  font-size: 1.5em;
+}
+/* line 169 */
+.fancybox-skin .main {
+  margin-top: 10px;
+  overflow: auto;
+}
+/* line 172 */
+.fancybox-skin .main img {
+  float: left;
+  padding-right: 15px;
+}
+/* line 178 */
+.fancybox-skin .ingredients {
+  font-size: 0.9em;
+  line-height: 1.3em;
+  overflow: auto;
+}
+/* line 184 */
+.fancybox-skin .source {
+  margin-top: 10px;
 }

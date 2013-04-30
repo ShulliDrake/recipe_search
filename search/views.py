@@ -15,7 +15,10 @@ def search(request):
 
 
 def api(request):
-    """Make API call and return JSON response"""
+    """
+    Recipe Search API
+    Make API call and return JSON response
+    """
 
     api_url_base = settings.API_URL
 
@@ -26,5 +29,22 @@ def api(request):
 
     response = {"results": recipes,
                 "totalCount": r.json().get("totalMatchCount")}
+
+    return HttpResponse(simplejson.dumps(response), mimetype="application/json")
+
+
+def recipe_api(request):
+    """
+    Get Recipe API
+    """
+
+    recipe_id = request.GET.get("id")
+    api_id = settings.API_ID
+    api_key = settings.API_KEY
+    api_url_base = settings.RECIPE_API_URL
+
+    r = requests.get(api_url_base % (recipe_id, api_id, api_key))
+
+    response = r.json()
 
     return HttpResponse(simplejson.dumps(response), mimetype="application/json")

@@ -156,7 +156,32 @@ input {
   }
 }
 
+/* fancybox */
 .fancybox-overlay {
-    background: rgb(255, 255, 255) transparent; /* fallback */
-    background: rgba(255, 255, 255, 0.8); /* nice browsers */
+    background: rgb(0, 0, 0) transparent; /* fallback */
+    background: rgba(0, 0, 0, 0.8); /* nice browsers */
+}
+.fancybox-skin {
+  .heading {
+    font-size:1.5em;
+  }
+
+  .main {
+    margin-top:10px;
+    overflow:auto;
+    img {
+      float:left;
+      padding-right:15px;
+    }
+  }
+
+  .ingredients {
+    font-size:0.9em;
+    line-height:1.3em;
+    overflow:auto;
+  }
+
+  .source {
+    margin-top:10px;
+  }
 }
