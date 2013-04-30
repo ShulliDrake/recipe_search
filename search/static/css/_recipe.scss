@@ -155,3 +155,8 @@ input {
 
   }
 }
+
+.fancybox-overlay {
+    background: rgb(255, 255, 255) transparent; /* fallback */
+    background: rgba(255, 255, 255, 0.8); /* nice browsers */
+}

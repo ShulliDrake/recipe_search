@@ -177,3 +177,11 @@ input {
 #result .board .label {
   font-weight: bold;
 }
+
+/* line 159 */
+.fancybox-overlay {
+  background: white transparent;
+  /* fallback */
+  background: rgba(255, 255, 255, 0.8);
+  /* nice browsers */
+}

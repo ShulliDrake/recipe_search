@@ -20,11 +20,11 @@ def api(request):
     api_url_base = settings.API_URL
 
 
-    r = requests.get(api_url_base % "q=american")
+    r = requests.get(api_url_base % "q=italian")
 
     recipes = r.json().get("matches")
 
-    response = {"recipes": recipes,
+    response = {"results": recipes,
                 "totalCount": r.json().get("totalMatchCount")}
 
     return HttpResponse(simplejson.dumps(response), mimetype="application/json")

@@ -4,6 +4,7 @@ if(!RS || typeof RS === undefined) {
 }
 
 //Backbone models and views
+RS.collection = {};
 RS.models = {}
 RS.views = {}
 
@@ -16,30 +17,15 @@ $(function(e){
 }); //document ready
 
 RS.models.RecipeModel = Backbone.Model.extend({
+
+});
+
+RS.collection.RecipeList = Backbone.Collection.extend({
+
     url: "/api",
 
-    defaults: {
-	recipes: null
-    },
-
-    initialize: function(){
-
-    },
-
-    parse: function(response){
-	console.log(response);
-	if(response){
-	    this.set({"recipes": response.recipes})
-	}
-    },
-
-    searchRecipes: function(){
-	var self = this;
-	this.fetch({
-	    success: function(){
-		self.trigger("RecipeListUpdated");
-	    }
-	});
+    parse: function(response) {
+	return response.results;
     }
 
 });
@@ -47,44 +33,75 @@ RS.models.RecipeModel = Backbone.Model.extend({
 RS.views.MainView = Backbone.View.extend({
 
     initialize: function(){
-	var searchFormView = new RS.views.SearchFormView({
-	    el: $("#search"),
-	    model: this.model
-	});
-
 	var searchResultView = new RS.views.SearchResultView({
-	    el: $("#result"),
+	    el: $(".content"),
 	    model: this.model
 	});
-    }
-});
-
-RS.views.SearchFormView = Backbone.View.extend({
-    events: {
-	"submit form": "submit"
-    },
-
-    initialize: function(){},
-
-    submit: function(e){
-	e.preventDefault();
-
-	this.model.searchRecipes();
     }
 });
 
 RS.views.SearchResultView = Backbone.View.extend({
 
-    template: _.template($("#recipeListTemplate").html()),
+    events: {
+	"submit form": "submit"
+    },
 
     initialize: function(){
-	this.model.bind("RecipeListUpdated", this.render, this); //should it be "change:searchResult" ?
+	this.collection = new RS.collection.RecipeList({model:this.model});
+	this.collection.bind("reset", this.render, this);
     },
 
     render: function(){
 
-	var resultHtml = this.template({"recipes":this.model.get("recipes")});
+	//TODO - result list selector
+	$("#result ul").html("");
 
-	this.$el.html(resultHtml);
+	this.collection.each(function(model){
+
+	    var recipeView = new RS.views.RecipeCollectionView({
+		model:model,
+//		collection: this.collection
+	    });
+
+	    $("#result ul").append(recipeView.render().$el);
+	});
+
+    },
+
+    submit: function(e){
+	e.preventDefault();
+
+	this.collection.fetch({reset:true});
     }
+
+});
+
+RS.views.RecipeCollectionView = Backbone.View.extend({
+
+    tagName: "li",
+
+    events: {
+	"click a": "preview"
+    },
+
+    template: _.template($("#recipeItemTemplate").html()),
+
+    render: function() {
+	this.$el.html(this.template(this.model.toJSON()));
+	return this;
+    },
+
+    preview: function() {
+
+	var recipeName = this.model.get('recipeName');
+	var source = this.model.get('sourceDisplayName');
+	$.fancybox('<p>'+recipeName+'</p>', {
+	    afteroad: function() {
+		this.content.append('<h1>2. My custom title</h1>');
+	    },
+	    openEffect:"none"
+
+	});
+    }
+
 });

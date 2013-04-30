@@ -1,16 +1,10 @@
 {% load i18n %}
-<script type="text/template" id="recipeListTemplate">
-  <ul>
-    <% _.each(recipes, function(item){ %>
-    <li>
-        <a><img src="<%= item.smallImageUrls[0] %>" /></a>
-      <div class="board">
-        <div class="name"><%= item.recipeName %></div>
-        <div class="ingredients"><span class="label">{% trans "Ingredients:" %}</span> <%= item.ingredients%></div>
-        <div class="source"><span class="label">{% trans "From:"%}</span> <%= item.sourceDisplayName %></div>
-        <div class="rating"><span class="star<%= item.rating %>"></span></div>
-      </div>
-    </li>
-    <% }); %>
-  </ul>
+<script type="text/template" id="recipeItemTemplate">
+  <a href="#"><img src="<%= smallImageUrls[0] %>" /></a>
+  <div class="board">
+    <div class="name"><%= recipeName %></div>
+    <div class="ingredients"><span class="label">{% trans "Ingredients:" %}</span> <%= ingredients%></div>
+    <div class="source"><span class="label">{% trans "From:"%}</span> <%= sourceDisplayName %></div>
+    <div class="rating"><span class="star<%= rating %>"></span></div>
+  </div>
 </script>

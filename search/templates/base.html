@@ -3,6 +3,9 @@
 <html lang="en">
 <head><title>Find your favorite recipe!</title>
 
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="{{ STATIC_URL }}/lib/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+
   {% assets "css_all" %}
   <link rel="stylesheet" href="{{ ASSET_URL }}" />
   {% endassets %}
@@ -20,6 +23,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+  <script src="{{ STATIC_URL }}/lib/jquery.fancybox.pack.js?v=2.1.4"></script>
   {% assets "js_all" %}
   <script src="{{ ASSET_URL }}"></script>
   {% endassets %}
