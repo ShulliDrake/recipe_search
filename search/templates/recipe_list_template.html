@@ -14,15 +14,16 @@
   <div class="main">
     <img src="<%= imageUrl %>" />
     <div class="ingredients">
-      <p>Servings: <%= servings %></p>
+      <span class="label">{% trans "Ingredients" %}</span>
       <ul>
       <% _.each(ingredientList, function(item){ %>
         <li><%= item %></li>
       <% }); %>
       </ul>
+      <p class="serving">{% trans "Servings:" %} <%= servings %></p>
     </div>
   </div>
   <div class="source">
-    <a href="<%= sourceUrl %>" target="_blank"><%= source %></a>
+    <span class="label">{% trans "Source: " %}</span><a href="<%= sourceUrl %>" target="_blank"><%= source %></a>
   </div>
 </script>

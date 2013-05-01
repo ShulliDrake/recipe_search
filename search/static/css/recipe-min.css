@@ -202,12 +202,33 @@ input {
   padding-right: 15px;
 }
 /* line 178 */
+.fancybox-skin .serving {
+  font-size: 0.8em;
+  font-weight: bold;
+  padding-top: 10px;
+}
+/* line 184 */
 .fancybox-skin .ingredients {
   font-size: 0.9em;
   line-height: 1.3em;
   overflow: auto;
 }
-/* line 184 */
+/* line 188 */
+.fancybox-skin .ingredients ul {
+  font-size: 0.8em;
+}
+/* line 190 */
+.fancybox-skin .ingredients ul li {
+  border-bottom: 1px dotted #a3a3a3;
+  padding: 2px;
+}
+/* line 197 */
 .fancybox-skin .source {
   margin-top: 10px;
+}
+/* line 201 */
+.fancybox-skin .label {
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: bold;
 }
