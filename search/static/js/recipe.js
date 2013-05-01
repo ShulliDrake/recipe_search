@@ -90,7 +90,13 @@ RS.views.SearchResultView = Backbone.View.extend({
     submit: function(e){
 	e.preventDefault();
 
-	this.collection.fetch({reset:true});
+	var keywords = $('#keywords').val();
+
+	this.collection.fetch({
+	    reset:true,
+	    data:{q:keywords}
+	});
+
     }
 
 });

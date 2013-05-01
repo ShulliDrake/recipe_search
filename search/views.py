@@ -20,10 +20,11 @@ def api(request):
     Make API call and return JSON response
     """
 
+    keywords = request.GET.get('q')
+
     api_url_base = settings.API_URL
 
-
-    r = requests.get(api_url_base % "q=italian")
+    r = requests.get(api_url_base % keywords)
 
     recipes = r.json().get("matches")
 
