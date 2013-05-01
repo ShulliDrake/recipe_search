@@ -204,3 +204,11 @@ input {
     font-weight:bold;
   }
 }
+
+.no_results {
+  width:500px;
+  padding:25px 10px;
+  border-radius:7px;
+  background: rgb(255, 255, 255) transparent; /* fallback */
+  background: rgba(255, 255, 255, 0.8); /* nice browsers */
+}

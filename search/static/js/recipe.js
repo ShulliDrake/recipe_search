@@ -74,16 +74,27 @@ RS.views.SearchResultView = Backbone.View.extend({
     render: function(){
 
 	//TODO - result list selector
-	$("#result ul").html("");
+	$("#result").html("");
 
-	this.collection.each(function(model){
+	if (this.collection.length > 0) {
+	    //TODO
+	    $("#result").append("<ul></ul>");
+	    this.collection.each(function(model){
 
-	    var recipeView = new RS.views.RecipeCollectionView({
-		model:model,
+		var recipeView = new RS.views.RecipeCollectionView({
+		    model:model,
+		});
+
+		$("#result ul").append(recipeView.render().$el);
 	    });
+	} else {
+	    //No search results
+	    var errorView = new RS.views.ErrorView({
+		model: this.model
+	    });
+	    $("#result").html(errorView.render().$el);
+	}
 
-	    $("#result ul").append(recipeView.render().$el);
-	});
 
     },
 
@@ -99,6 +110,16 @@ RS.views.SearchResultView = Backbone.View.extend({
 
     }
 
+});
+
+RS.views.ErrorView = Backbone.View.extend({
+
+    template: _.template($("#NoResultsTemplate").html()),
+
+    render: function() {
+	this.$el.html(this.template({keywords:"key"}));
+	return this;
+    }
 });
 
 RS.views.RecipeCollectionView = Backbone.View.extend({

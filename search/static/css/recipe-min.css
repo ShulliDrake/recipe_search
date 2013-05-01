@@ -232,3 +232,14 @@ input {
   font-style: italic;
   font-weight: bold;
 }
+
+/* line 208 */
+.no_results {
+  width: 500px;
+  padding: 25px 10px;
+  border-radius: 7px;
+  background: white transparent;
+  /* fallback */
+  background: rgba(255, 255, 255, 0.8);
+  /* nice browsers */
+}
