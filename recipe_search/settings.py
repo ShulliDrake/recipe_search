@@ -159,3 +159,9 @@ LOGGING = {
 # django-assets
 ASSETS_DEBUG = True
 ASSETS_ROOT = os.path.join(PROJECT_ROOT, 'search/static')
+
+# heroku
+import dj_database_url
+if os.getcwd() == "/app":
+    DATABASES = {'default': dj_database_url.config(default='postgres://localhost')}
+    ASSETS_DEBUG = False
