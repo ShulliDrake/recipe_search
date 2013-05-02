@@ -225,32 +225,38 @@ input {
   padding-top: 10px;
 }
 /* line 201 */
+.fancybox-skin .time {
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+/* line 207 */
 .fancybox-skin .ingredients {
   font-size: 0.9em;
   line-height: 1.3em;
   overflow: auto;
 }
-/* line 205 */
+/* line 211 */
 .fancybox-skin .ingredients ul {
   font-size: 0.8em;
 }
-/* line 207 */
+/* line 213 */
 .fancybox-skin .ingredients ul li {
   border-bottom: 1px dotted #a3a3a3;
   padding: 2px;
 }
-/* line 214 */
+/* line 220 */
 .fancybox-skin .source {
   margin-top: 10px;
 }
-/* line 218 */
+/* line 224 */
 .fancybox-skin .label {
   font-size: 0.8em;
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 225 */
+/* line 231 */
 .no_results {
   width: 500px;
   padding: 25px 10px;

@@ -150,8 +150,6 @@ RS.views.RecipeCollectionView = Backbone.View.extend({
 
     showFancybox: function() {
 	/* Show recipe with large image in a fancybox. */
-	console.log(this.model);
-
 	var id = this.model.get('id');
 	var html = this.fancyboxTemplate({
 	    'recipeName': this.model.get('recipeName'),
@@ -159,6 +157,7 @@ RS.views.RecipeCollectionView = Backbone.View.extend({
 	    'ingredientList': this.model.get('ingredientLines'),
 	    'servings': this.model.get('numberOfServings'),
 	    'sourceUrl': this.model.get('source').sourceRecipeUrl,
+	    'cookingTime': (this.model.get('totalTimeInSeconds') ? this.model.get('totalTimeInSeconds') / 60 : null),
 	    'imageUrl': this.model.get('images')[0].hostedLargeUrl
 	});
 

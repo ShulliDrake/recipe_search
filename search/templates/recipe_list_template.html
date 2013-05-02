@@ -21,6 +21,9 @@
       <% }); %>
       </ul>
       <p class="serving">{% trans "Servings:" %} <%= servings %></p>
+      <% if(cookingTime) { %>
+      <p class="time">{% trans "Total Time: " %}<%= cookingTime %> {% trans "minutes" %}</p>
+      <% } %>
     </div>
   </div>
   <div class="source">
