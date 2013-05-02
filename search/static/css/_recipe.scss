@@ -33,7 +33,12 @@ h2 {
   font-size:1em;
 }
 input {
-  padding:3px 5px;
+  color:#3c3c3c;
+  padding:5px;
+  border:1px solid #aaa;
+  border-radius:3px;
+  box-shadow:inset 0 1px 1px rgba(0,0,0,0.2),0 0 0 #000;
+  -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.2),0 0 0 #000;
 }
 
 /****************/
@@ -58,6 +63,7 @@ input {
   input.q {
     width:250px;
     font-size:0.9em;
+
   }
 
   button {
@@ -67,7 +73,7 @@ input {
     font-weight:bold;
     border:1px solid #fdfdfd;
     border-radius:5px;
-    padding:5px 7px;
+    padding:6px 10px;
     background: #82FA58;
     background: -webkit-gradient(linear, left top, left bottom, from(#82FA58), to(#5FB404));
     background: -webkit-linear-gradient(top, #82FA58, #5FB404);
