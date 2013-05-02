@@ -1,3 +1,5 @@
+$pink-text:#FA5858;
+
 *{
   padding:0;
   margin:0;
@@ -11,7 +13,7 @@ body {
   background-attachment:fixed;
 }
 a {
-  color:#FA5858;
+  color:$pink-text;
   text-decoration:none;
 }
 a:visited {
@@ -22,7 +24,7 @@ ul, ol {
   list-style:none;
 }
 h1, h2 {
-  color:#FA5858;
+  color:$pink-text;
   font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-shadow:#6E6E6E 0.1em 0.1em 0.1em;
   margin-bottom:10px;
@@ -89,17 +91,24 @@ input {
     width:380px;
     background: rgb(255, 255, 255) transparent; /* fallback */
     background: rgba(255, 255, 255, 0.8); /* nice browsers */
-//    border:1px solid #FF6666;
+
     box-shadow:0 0 5px #ff6666;
     border-radius:20px;
     margin:0 15px 15px 0;
     padding: 10px;
     float:left;
 
-    a {
+    a.thumbnail {
       float:left;
       margin-top:8px;
       margin-right:5px;
+
+      img {
+        display:block;
+      }
+    }
+    a.thumbnail:hover {
+      box-shadow:0 0 5px $pink-text;
     }
   }
 
@@ -110,7 +119,6 @@ input {
     padding:10px;
     font-size:0.9em;
 
-
     .name {
       color:#DF3C3C;
       font-size:1.3em;
@@ -119,6 +127,9 @@ input {
       text-shadow:#ccc 1px 1px;
       padding-bottom:5px;
       margin-top:-3px;
+      a:hover {
+        text-decoration:underline;
+      }
     }
     .source {
       margin-top:3px;
