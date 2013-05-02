@@ -1,6 +1,6 @@
 {% load i18n %}
 <script type="text/template" id="recipeItemTemplate">
-  <a class="thumbnail" href="#"><img src="<%= smallImageUrls[0] %>" /></a>
+  <a class="thumbnail" href="#"><img src="<%= smallImageUrls[0] %>" alt="<%= recipeName %>" title="<%= recipeName %>" /></a>
   <div class="board">
     <div class="name"><a href="#"><%= recipeName %></a></div>
     <div class="ingredients"><span class="label">{% trans "Ingredients:" %}</span> <%= ingredients%></div>

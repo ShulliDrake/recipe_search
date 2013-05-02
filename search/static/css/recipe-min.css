@@ -130,14 +130,14 @@ input {
 #result .board {
   display: inline-block;
   width: 250px;
-  min-height: 60px;
-  padding: 10px;
+  min-height: 87px;
+  padding: 7px;
   font-size: 0.9em;
 }
 /* line 122 */
 #result .board .name {
   color: #DF3C3C;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-style: italic;
   font-weight: bold;
   text-shadow: #cccccc 1px 1px;
