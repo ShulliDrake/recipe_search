@@ -1,3 +1,4 @@
+{% load i18n %}
 {% load assets %}
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +12,19 @@
   {% endassets %}
 </head>
 <body>
+
+  <header>
+    <section id="tagline">
+      <h1>What should I cook tonight?</h1>
+    </section>
+
+    <section id="search">
+      <form>
+        <input id="keywords" class="q" type="text" name="q" values="" placeholder="{% trans 'Find recipe!' %}" autocomplete="off" />
+        <button type="submit">Search!</button>
+      </form>
+    </section>
+  </header>
 
   <div id="container">
   {% block content %}

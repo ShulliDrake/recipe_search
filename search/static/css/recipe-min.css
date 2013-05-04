@@ -8,37 +8,33 @@
 body {
   font-family: Arial,Helvetica,sans-serif;
   font-size: 1em;
-  background-image: url("/static/img/radish.jpg"), url("/static/img/pear.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: right top, left bottom;
-  background-attachment: fixed;
+  background: url("/static/img/bg.png") repeat;
 }
 
-/* line 15 */
+/* line 12 */
 a {
   color: #fa5858;
   text-decoration: none;
 }
 
-/* line 23 */
+/* line 20 */
 ul, ol {
   list-style: none;
 }
 
-/* line 26 */
+/* line 23 */
 h1, h2 {
   color: #fa5858;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  text-shadow: #6e6e6e 0.1em 0.1em 0.1em;
   margin-bottom: 10px;
 }
 
-/* line 32 */
+/* line 28 */
 h2 {
   font-size: 1em;
 }
 
-/* line 35 */
+/* line 31 */
 input {
   color: #3c3c3c;
   padding: 5px;
@@ -49,34 +45,46 @@ input {
 }
 
 /****************/
-/* line 45 */
+/* line 41 */
+header {
+  background-color: #fb9393;
+  padding: 10px;
+  box-shadow: 0px 2px 3px 0px #a0a0a0;
+  -webkit-box-shadow: 0px 2px 3px 0px #a0a0a0;
+}
+/* line 46 */
+header section {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 53 */
 #container {
   width: 900px;
   max-width: 1200px;
-}
-/* line 49 */
-#container section {
-  margin-left: 30px;
+  margin: 0 auto;
 }
 
-/* line 54 */
-#tagline {
-  margin: 30px 0 0 110px;
+/* line 60 */
+#tagline h1 {
+  color: #fff;
+  text-shadow: #7a7a7a 0.1em 0.1em 0.1em;
 }
 
-/* line 58 */
+/* line 66 */
 #search {
   width: 350px;
   padding: 0 10px;
-  margin: 0 0 20px 100px;
 }
-/* line 63 */
+/* line 70 */
 #search input.q {
   width: 250px;
   font-size: 0.9em;
 }
-/* line 69 */
+/* line 76 */
 #search button {
+  cursor: pointer;
   color: #fff;
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
   font-size: 0.9em;
@@ -92,19 +100,19 @@ input {
   background: -o-linear-gradient(top, #82fa58, #5fb404);
 }
 
-/* line 86 */
+/* line 94 */
 #result {
   padding: 10px;
   border-radius: 12px;
   font-size: 0.8em;
   color: #333;
 }
-/* line 92 */
+/* line 100 */
 #result ul {
   overflow: auto;
   padding: 15px 0 0 15px;
 }
-/* line 96 */
+/* line 104 */
 #result li {
   width: 380px;
   background: white transparent;
@@ -117,21 +125,21 @@ input {
   padding: 10px;
   float: left;
 }
-/* line 107 */
+/* line 115 */
 #result li a.thumbnail {
   float: left;
   margin-top: 8px;
   margin-right: 5px;
 }
-/* line 112 */
+/* line 120 */
 #result li a.thumbnail img {
   display: block;
 }
-/* line 116 */
+/* line 124 */
 #result li a.thumbnail:hover {
   box-shadow: 0 0 5px #fa5858;
 }
-/* line 121 */
+/* line 129 */
 #result .board {
   display: inline-block;
   width: 250px;
@@ -139,7 +147,7 @@ input {
   padding: 7px;
   font-size: 0.9em;
 }
-/* line 128 */
+/* line 136 */
 #result .board .name {
   color: #DF3C3C;
   font-size: 1.2em;
@@ -149,54 +157,54 @@ input {
   padding-bottom: 5px;
   margin-top: -3px;
 }
-/* line 136 */
+/* line 144 */
 #result .board .name a:hover {
   text-decoration: underline;
 }
-/* line 140 */
+/* line 148 */
 #result .board .source {
   margin-top: 3px;
 }
-/* line 143 */
+/* line 151 */
 #result .board .rating {
   padding-top: 5px;
 }
-/* line 145 */
+/* line 153 */
 #result .board .rating span {
   display: block;
   width: 76px;
   height: 17px;
   background: url("/static/img/stars.png") no-repeat;
 }
-/* line 151 */
+/* line 159 */
 #result .board .rating .star4 {
   background-position: center -17px;
 }
-/* line 154 */
+/* line 162 */
 #result .board .rating .star3 {
   background-position: center -32px;
 }
-/* line 157 */
+/* line 165 */
 #result .board .rating .star2 {
   background-position: center -48px;
 }
-/* line 160 */
+/* line 168 */
 #result .board .rating .star1 {
   background-position: center -64px;
 }
-/* line 164 */
+/* line 172 */
 #result .board .ingredients {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 169 */
+/* line 177 */
 #result .board .label {
   font-weight: bold;
 }
 
 /* fancybox */
-/* line 177 */
+/* line 185 */
 .fancybox-overlay {
   background: black transparent;
   /* fallback */
@@ -204,59 +212,59 @@ input {
   /* nice browsers */
 }
 
-/* line 182 */
+/* line 190 */
 .fancybox-skin .heading {
   font-size: 1.5em;
 }
-/* line 186 */
+/* line 194 */
 .fancybox-skin .main {
   margin-top: 10px;
   overflow: auto;
 }
-/* line 189 */
+/* line 197 */
 .fancybox-skin .main img {
   float: left;
   padding-right: 15px;
 }
-/* line 195 */
+/* line 203 */
 .fancybox-skin .serving {
   font-size: 0.8em;
   font-weight: bold;
   padding-top: 10px;
 }
-/* line 201 */
+/* line 209 */
 .fancybox-skin .time {
   padding-top: 10px;
   font-weight: bold;
   font-size: 0.8em;
 }
-/* line 207 */
+/* line 215 */
 .fancybox-skin .ingredients {
   font-size: 0.9em;
   line-height: 1.3em;
   overflow: auto;
 }
-/* line 211 */
+/* line 219 */
 .fancybox-skin .ingredients ul {
   font-size: 0.8em;
 }
-/* line 213 */
+/* line 221 */
 .fancybox-skin .ingredients ul li {
   border-bottom: 1px dotted #a3a3a3;
   padding: 2px;
 }
-/* line 220 */
+/* line 228 */
 .fancybox-skin .source {
   margin-top: 10px;
 }
-/* line 224 */
+/* line 232 */
 .fancybox-skin .label {
   font-size: 0.8em;
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 231 */
+/* line 239 */
 .no_results {
   width: 500px;
   padding: 25px 10px;

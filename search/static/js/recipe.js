@@ -23,9 +23,19 @@ RS.models.RecipeModel = Backbone.Model.extend({
 RS.views.MainView = Backbone.View.extend({
 
     initialize: function(){
+
+	this.collection = new RS.collection.RecipeList({model:this.model});
+
+	var searchFormView = new RS.views.SearchFormView({
+	    el: $("#search"),
+	    model: this.model,
+	    collection: this.collection
+	});
+
 	var searchResultView = new RS.views.SearchResultView({
 	    el: $(".content"),
-	    model: this.model
+	    model: this.model,
+	    collection: this.collection
 	});
     }
 });
@@ -59,16 +69,31 @@ RS.collection.RecipeList = Backbone.Collection.extend({
 
 });
 
-RS.views.SearchResultView = Backbone.View.extend({
-
+RS.views.SearchFormView = Backbone.View.extend({
     events: {
 	"submit form": "submit"
     },
 
-    initialize: function(){
-	this.collection = new RS.collection.RecipeList({model:this.model});
-	this.collection.bind("reset", this.render, this);
 
+    submit: function(e){
+	e.preventDefault();
+
+	var keywords = $('#keywords').val();
+
+	this.collection.fetch({
+	    reset:true,
+	    data:{q:keywords}
+	});
+
+    }
+
+});
+
+RS.views.SearchResultView = Backbone.View.extend({
+
+
+    initialize: function(){
+	this.collection.bind("reset", this.render, this);
     },
 
     render: function(){
@@ -95,18 +120,6 @@ RS.views.SearchResultView = Backbone.View.extend({
 	    $("#result").html(errorView.render().$el);
 	}
 
-
-    },
-
-    submit: function(e){
-	e.preventDefault();
-
-	var keywords = $('#keywords').val();
-
-	this.collection.fetch({
-	    reset:true,
-	    data:{q:keywords}
-	});
 
     }
 
