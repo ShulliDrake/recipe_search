@@ -79,15 +79,15 @@ header {
     text-shadow: 2px 1px 1px rgba(0,0,0,.7);
     font-size:0.9em;
     font-weight:bold;
-    border:1px solid #fdfdfd;
+    border:1px solid $pink-text;
     border-radius:5px;
     padding:6px 10px;
-    background: #82FA58;
-    background: -webkit-gradient(linear, left top, left bottom, from(#82FA58), to(#5FB404));
-    background: -webkit-linear-gradient(top, #82FA58, #5FB404);
-    background: -moz-linear-gradient(top, #82FA58, #5FB404);
-    background: -ms-linear-gradient(top, #82FA58, #5FB404);
-    background: -o-linear-gradient(top, #82FA58, #5FB404);
+    background: $pink-text;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fb9d9d), to($pink-text));
+    background: -webkit-linear-gradient(top, #fb9d9d, $pink-text);
+    background: -moz-linear-gradient(top, #fb9d9d, $pink-text);
+    background: -ms-linear-gradient(top, #fb9d9d, $pink-text);
+    background: -o-linear-gradient(top, #fb9d9d, $pink-text);
   }
 }
 

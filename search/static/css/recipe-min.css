@@ -89,15 +89,15 @@ header section {
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
   font-size: 0.9em;
   font-weight: bold;
-  border: 1px solid #fdfdfd;
+  border: 1px solid #fa5858;
   border-radius: 5px;
   padding: 6px 10px;
-  background: #82FA58;
-  background: -webkit-gradient(linear, left top, left bottom, from(#82fa58), to(#5fb404));
-  background: -webkit-linear-gradient(top, #82fa58, #5fb404);
-  background: -moz-linear-gradient(top, #82fa58, #5fb404);
-  background: -ms-linear-gradient(top, #82fa58, #5fb404);
-  background: -o-linear-gradient(top, #82fa58, #5fb404);
+  background: #fa5858;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fb9d9d), to(#fa5858));
+  background: -webkit-linear-gradient(top, #fb9d9d, #fa5858);
+  background: -moz-linear-gradient(top, #fb9d9d, #fa5858);
+  background: -ms-linear-gradient(top, #fb9d9d, #fa5858);
+  background: -o-linear-gradient(top, #fb9d9d, #fa5858);
 }
 
 /* line 94 */
