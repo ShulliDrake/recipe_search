@@ -45,44 +45,50 @@ input {
 }
 
 /****************/
-/* line 41 */
+/* line 42 */
+.fixedHeader header {
+  position: fixed;
+  width: 100%;
+  top: -40px;
+}
+/* line 48 */
+.fixedHeader #container {
+  padding-top: 90px;
+}
+
+/* line 53 */
 header {
   background-color: #fb9393;
-  padding: 10px;
+  padding: 10px 0 6px;
   box-shadow: 0px 2px 3px 0px #a0a0a0;
   -webkit-box-shadow: 0px 2px 3px 0px #a0a0a0;
 }
-/* line 46 */
+/* line 58 */
 header section {
   width: 900px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 53 */
+/* line 65 */
 #container {
   width: 900px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* line 60 */
+/* line 72 */
 #tagline h1 {
   color: #fff;
   text-shadow: #7a7a7a 0.1em 0.1em 0.1em;
 }
 
-/* line 66 */
-#search {
-  width: 350px;
-  padding: 0 10px;
-}
-/* line 70 */
+/* line 79 */
 #search input.q {
   width: 250px;
   font-size: 0.9em;
 }
-/* line 76 */
+/* line 85 */
 #search button {
   cursor: pointer;
   color: #fff;
@@ -100,19 +106,19 @@ header section {
   background: -o-linear-gradient(top, #fb9d9d, #fa5858);
 }
 
-/* line 94 */
+/* line 103 */
 #result {
   padding: 10px;
   border-radius: 12px;
   font-size: 0.8em;
   color: #333;
 }
-/* line 100 */
+/* line 109 */
 #result ul {
   overflow: auto;
   padding: 15px 0 0 15px;
 }
-/* line 104 */
+/* line 113 */
 #result li {
   width: 380px;
   background: white transparent;
@@ -125,21 +131,21 @@ header section {
   padding: 10px;
   float: left;
 }
-/* line 115 */
+/* line 124 */
 #result li a.thumbnail {
   float: left;
   margin-top: 8px;
   margin-right: 5px;
 }
-/* line 120 */
+/* line 129 */
 #result li a.thumbnail img {
   display: block;
 }
-/* line 124 */
+/* line 133 */
 #result li a.thumbnail:hover {
   box-shadow: 0 0 5px #fa5858;
 }
-/* line 129 */
+/* line 138 */
 #result .board {
   display: inline-block;
   width: 250px;
@@ -147,7 +153,7 @@ header section {
   padding: 7px;
   font-size: 0.9em;
 }
-/* line 136 */
+/* line 145 */
 #result .board .name {
   color: #DF3C3C;
   font-size: 1.2em;
@@ -157,54 +163,54 @@ header section {
   padding-bottom: 5px;
   margin-top: -3px;
 }
-/* line 144 */
+/* line 153 */
 #result .board .name a:hover {
   text-decoration: underline;
 }
-/* line 148 */
+/* line 157 */
 #result .board .source {
   margin-top: 3px;
 }
-/* line 151 */
+/* line 160 */
 #result .board .rating {
   padding-top: 5px;
 }
-/* line 153 */
+/* line 162 */
 #result .board .rating span {
   display: block;
   width: 76px;
   height: 17px;
   background: url("/static/img/stars.png") no-repeat;
 }
-/* line 159 */
+/* line 168 */
 #result .board .rating .star4 {
   background-position: center -17px;
 }
-/* line 162 */
+/* line 171 */
 #result .board .rating .star3 {
   background-position: center -32px;
 }
-/* line 165 */
+/* line 174 */
 #result .board .rating .star2 {
   background-position: center -48px;
 }
-/* line 168 */
+/* line 177 */
 #result .board .rating .star1 {
   background-position: center -64px;
 }
-/* line 172 */
+/* line 181 */
 #result .board .ingredients {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 177 */
+/* line 186 */
 #result .board .label {
   font-weight: bold;
 }
 
 /* fancybox */
-/* line 185 */
+/* line 194 */
 .fancybox-overlay {
   background: black transparent;
   /* fallback */
@@ -212,59 +218,59 @@ header section {
   /* nice browsers */
 }
 
-/* line 190 */
+/* line 199 */
 .fancybox-skin .heading {
   font-size: 1.5em;
 }
-/* line 194 */
+/* line 203 */
 .fancybox-skin .main {
   margin-top: 10px;
   overflow: auto;
 }
-/* line 197 */
+/* line 206 */
 .fancybox-skin .main img {
   float: left;
   padding-right: 15px;
 }
-/* line 203 */
+/* line 212 */
 .fancybox-skin .serving {
   font-size: 0.8em;
   font-weight: bold;
   padding-top: 10px;
 }
-/* line 209 */
+/* line 218 */
 .fancybox-skin .time {
   padding-top: 10px;
   font-weight: bold;
   font-size: 0.8em;
 }
-/* line 215 */
+/* line 224 */
 .fancybox-skin .ingredients {
   font-size: 0.9em;
   line-height: 1.3em;
   overflow: auto;
 }
-/* line 219 */
+/* line 228 */
 .fancybox-skin .ingredients ul {
   font-size: 0.8em;
 }
-/* line 221 */
+/* line 230 */
 .fancybox-skin .ingredients ul li {
   border-bottom: 1px dotted #a3a3a3;
   padding: 2px;
 }
-/* line 228 */
+/* line 237 */
 .fancybox-skin .source {
   margin-top: 10px;
 }
-/* line 232 */
+/* line 241 */
 .fancybox-skin .label {
   font-size: 0.8em;
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 239 */
+/* line 248 */
 .no_results {
   width: 500px;
   padding: 25px 10px;

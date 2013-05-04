@@ -74,6 +74,19 @@ RS.views.SearchFormView = Backbone.View.extend({
 	"submit form": "submit"
     },
 
+    initialize: function() {
+
+	$(window).scroll(this.setHeaderPosition);
+    },
+
+    setHeaderPosition: function() {
+	if($(this).scrollTop() > 40) {
+	    //search form fixed at top
+	    $('body').addClass('fixedHeader');
+	} else {
+	    $('body').removeClass('fixedHeader');
+	}
+    },
 
     submit: function(e){
 	e.preventDefault();
