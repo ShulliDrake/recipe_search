@@ -65,6 +65,7 @@ header {
 #container {
   width:900px;
   max-width:1200px;
+  min-height:350px;
   margin:0 auto;
 }
 
@@ -251,4 +252,28 @@ header {
   border-radius:7px;
   background: rgb(255, 255, 255) transparent; /* fallback */
   background: rgba(255, 255, 255, 0.8); /* nice browsers */
+}
+
+footer {
+  width:900px;
+  margin:0 auto;
+  padding:10px 0;
+  color:#666;
+  font-size:0.8em;
+
+  .powered_by {
+    text-align:center;
+  }
+
+  .links {
+    border-top:1px solid #fdd7d7;
+    margin-top:20px;
+    padding:10px 20px;
+    overflow:auto;
+
+    li {
+      float:left;
+      margin-right:10px;
+    }
+  }
 }

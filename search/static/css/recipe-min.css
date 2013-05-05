@@ -74,21 +74,22 @@ header section {
 #container {
   width: 900px;
   max-width: 1200px;
+  min-height: 350px;
   margin: 0 auto;
 }
 
-/* line 72 */
+/* line 73 */
 #tagline h1 {
   color: #fff;
   text-shadow: #7a7a7a 0.1em 0.1em 0.1em;
 }
 
-/* line 79 */
+/* line 80 */
 #search input.q {
   width: 250px;
   font-size: 0.9em;
 }
-/* line 85 */
+/* line 86 */
 #search button {
   cursor: pointer;
   color: #fff;
@@ -106,19 +107,19 @@ header section {
   background: -o-linear-gradient(top, #fb9d9d, #fa5858);
 }
 
-/* line 103 */
+/* line 104 */
 #result {
   padding: 10px;
   border-radius: 12px;
   font-size: 0.8em;
   color: #333;
 }
-/* line 109 */
+/* line 110 */
 #result ul {
   overflow: auto;
   padding: 15px 0 0 15px;
 }
-/* line 113 */
+/* line 114 */
 #result li {
   width: 380px;
   background: white transparent;
@@ -131,21 +132,21 @@ header section {
   padding: 10px;
   float: left;
 }
-/* line 124 */
+/* line 125 */
 #result li a.thumbnail {
   float: left;
   margin-top: 8px;
   margin-right: 5px;
 }
-/* line 129 */
+/* line 130 */
 #result li a.thumbnail img {
   display: block;
 }
-/* line 133 */
+/* line 134 */
 #result li a.thumbnail:hover {
   box-shadow: 0 0 5px #fa5858;
 }
-/* line 138 */
+/* line 139 */
 #result .board {
   display: inline-block;
   width: 250px;
@@ -153,7 +154,7 @@ header section {
   padding: 7px;
   font-size: 0.9em;
 }
-/* line 145 */
+/* line 146 */
 #result .board .name {
   color: #DF3C3C;
   font-size: 1.2em;
@@ -163,54 +164,54 @@ header section {
   padding-bottom: 5px;
   margin-top: -3px;
 }
-/* line 153 */
+/* line 154 */
 #result .board .name a:hover {
   text-decoration: underline;
 }
-/* line 157 */
+/* line 158 */
 #result .board .source {
   margin-top: 3px;
 }
-/* line 160 */
+/* line 161 */
 #result .board .rating {
   padding-top: 5px;
 }
-/* line 162 */
+/* line 163 */
 #result .board .rating span {
   display: block;
   width: 76px;
   height: 17px;
   background: url("/static/img/stars.png") no-repeat;
 }
-/* line 168 */
+/* line 169 */
 #result .board .rating .star4 {
   background-position: center -17px;
 }
-/* line 171 */
+/* line 172 */
 #result .board .rating .star3 {
   background-position: center -32px;
 }
-/* line 174 */
+/* line 175 */
 #result .board .rating .star2 {
   background-position: center -48px;
 }
-/* line 177 */
+/* line 178 */
 #result .board .rating .star1 {
   background-position: center -64px;
 }
-/* line 181 */
+/* line 182 */
 #result .board .ingredients {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 186 */
+/* line 187 */
 #result .board .label {
   font-weight: bold;
 }
 
 /* fancybox */
-/* line 194 */
+/* line 195 */
 .fancybox-overlay {
   background: black transparent;
   /* fallback */
@@ -218,59 +219,59 @@ header section {
   /* nice browsers */
 }
 
-/* line 199 */
+/* line 200 */
 .fancybox-skin .heading {
   font-size: 1.5em;
 }
-/* line 203 */
+/* line 204 */
 .fancybox-skin .main {
   margin-top: 10px;
   overflow: auto;
 }
-/* line 206 */
+/* line 207 */
 .fancybox-skin .main img {
   float: left;
   padding-right: 15px;
 }
-/* line 212 */
+/* line 213 */
 .fancybox-skin .serving {
   font-size: 0.8em;
   font-weight: bold;
   padding-top: 10px;
 }
-/* line 218 */
+/* line 219 */
 .fancybox-skin .time {
   padding-top: 10px;
   font-weight: bold;
   font-size: 0.8em;
 }
-/* line 224 */
+/* line 225 */
 .fancybox-skin .ingredients {
   font-size: 0.9em;
   line-height: 1.3em;
   overflow: auto;
 }
-/* line 228 */
+/* line 229 */
 .fancybox-skin .ingredients ul {
   font-size: 0.8em;
 }
-/* line 230 */
+/* line 231 */
 .fancybox-skin .ingredients ul li {
   border-bottom: 1px dotted #a3a3a3;
   padding: 2px;
 }
-/* line 237 */
+/* line 238 */
 .fancybox-skin .source {
   margin-top: 10px;
 }
-/* line 241 */
+/* line 242 */
 .fancybox-skin .label {
   font-size: 0.8em;
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 248 */
+/* line 249 */
 .no_results {
   width: 500px;
   padding: 25px 10px;
@@ -279,4 +280,29 @@ header section {
   /* fallback */
   background: rgba(255, 255, 255, 0.8);
   /* nice browsers */
+}
+
+/* line 257 */
+footer {
+  width: 900px;
+  margin: 0 auto;
+  padding: 10px 0;
+  color: #666;
+  font-size: 0.8em;
+}
+/* line 264 */
+footer .powered_by {
+  text-align: center;
+}
+/* line 268 */
+footer .links {
+  border-top: 1px solid #fdd7d7;
+  margin-top: 20px;
+  padding: 10px 20px;
+  overflow: auto;
+}
+/* line 274 */
+footer .links li {
+  float: left;
+  margin-right: 10px;
 }
