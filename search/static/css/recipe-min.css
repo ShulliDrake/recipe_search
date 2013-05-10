@@ -62,19 +62,19 @@ header {
   padding: 10px 0 6px;
   box-shadow: 0px 2px 3px 0px #a0a0a0;
   -webkit-box-shadow: 0px 2px 3px 0px #a0a0a0;
+  z-index: 100;
 }
-/* line 58 */
+/* line 59 */
 header section {
   width: 900px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 65 */
+/* line 66 */
 #container {
   width: 900px;
   max-width: 1200px;
-  min-height: 350px;
   margin: 0 auto;
 }
 
@@ -150,11 +150,10 @@ header section {
 #result .board {
   display: inline-block;
   width: 250px;
-  min-height: 87px;
   padding: 7px;
   font-size: 0.9em;
 }
-/* line 146 */
+/* line 145 */
 #result .board .name {
   color: #DF3C3C;
   font-size: 1.2em;
@@ -164,54 +163,54 @@ header section {
   padding-bottom: 5px;
   margin-top: -3px;
 }
-/* line 154 */
+/* line 153 */
 #result .board .name a:hover {
   text-decoration: underline;
 }
-/* line 158 */
+/* line 157 */
 #result .board .source {
   margin-top: 3px;
 }
-/* line 161 */
+/* line 160 */
 #result .board .rating {
   padding-top: 5px;
 }
-/* line 163 */
+/* line 162 */
 #result .board .rating span {
   display: block;
   width: 76px;
   height: 17px;
   background: url("/static/img/stars.png") no-repeat;
 }
-/* line 169 */
+/* line 168 */
 #result .board .rating .star4 {
   background-position: center -17px;
 }
-/* line 172 */
+/* line 171 */
 #result .board .rating .star3 {
   background-position: center -32px;
 }
-/* line 175 */
+/* line 174 */
 #result .board .rating .star2 {
   background-position: center -48px;
 }
-/* line 178 */
+/* line 177 */
 #result .board .rating .star1 {
   background-position: center -64px;
 }
-/* line 182 */
+/* line 181 */
 #result .board .ingredients {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 187 */
+/* line 186 */
 #result .board .label {
   font-weight: bold;
 }
 
 /* fancybox */
-/* line 195 */
+/* line 194 */
 .fancybox-overlay {
   background: black transparent;
   /* fallback */
@@ -219,59 +218,59 @@ header section {
   /* nice browsers */
 }
 
-/* line 200 */
+/* line 199 */
 .fancybox-skin .heading {
   font-size: 1.5em;
 }
-/* line 204 */
+/* line 203 */
 .fancybox-skin .main {
   margin-top: 10px;
   overflow: auto;
 }
-/* line 207 */
+/* line 206 */
 .fancybox-skin .main img {
   float: left;
   padding-right: 15px;
 }
-/* line 213 */
+/* line 212 */
 .fancybox-skin .serving {
   font-size: 0.8em;
   font-weight: bold;
   padding-top: 10px;
 }
-/* line 219 */
+/* line 218 */
 .fancybox-skin .time {
   padding-top: 10px;
   font-weight: bold;
   font-size: 0.8em;
 }
-/* line 225 */
+/* line 224 */
 .fancybox-skin .ingredients {
   font-size: 0.9em;
   line-height: 1.3em;
   overflow: auto;
 }
-/* line 229 */
+/* line 228 */
 .fancybox-skin .ingredients ul {
   font-size: 0.8em;
 }
-/* line 231 */
+/* line 230 */
 .fancybox-skin .ingredients ul li {
   border-bottom: 1px dotted #a3a3a3;
   padding: 2px;
 }
-/* line 238 */
+/* line 237 */
 .fancybox-skin .source {
   margin-top: 10px;
 }
-/* line 242 */
+/* line 241 */
 .fancybox-skin .label {
   font-size: 0.8em;
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 249 */
+/* line 248 */
 .no_results {
   width: 500px;
   padding: 25px 10px;
@@ -282,7 +281,7 @@ header section {
   /* nice browsers */
 }
 
-/* line 257 */
+/* line 256 */
 footer {
   width: 900px;
   margin: 0 auto;
@@ -290,18 +289,18 @@ footer {
   color: #666;
   font-size: 0.8em;
 }
-/* line 264 */
+/* line 263 */
 footer .powered_by {
   text-align: center;
 }
-/* line 268 */
+/* line 267 */
 footer .links {
   border-top: 1px solid #fdd7d7;
   margin-top: 20px;
   padding: 10px 20px;
   overflow: auto;
 }
-/* line 274 */
+/* line 273 */
 footer .links li {
   float: left;
   margin-right: 10px;

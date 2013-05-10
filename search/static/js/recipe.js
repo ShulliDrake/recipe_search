@@ -107,16 +107,20 @@ RS.views.SearchResultView = Backbone.View.extend({
 
     initialize: function(){
 	this.collection.bind("reset", this.render, this);
+
+	this.$("#result").masonry({
+	    itemSelector: "li",
+	    isAnimated: true
+	});
     },
 
     render: function(){
 
 	//TODO - result list selector
-	$("#result").html("");
+	$("#result ul").html("");
+	$("#result div").remove();
 
 	if (this.collection.length > 0) {
-	    //TODO
-	    $("#result").append("<ul></ul>");
 	    this.collection.each(function(model){
 
 		var recipeView = new RS.views.RecipeCollectionView({
@@ -130,9 +134,10 @@ RS.views.SearchResultView = Backbone.View.extend({
 	    var errorView = new RS.views.ErrorView({
 		model: this.model
 	    });
-	    $("#result").html(errorView.render().$el);
+	    $("#result").append(errorView.render().$el);
 	}
 
+	this.$("#result").masonry('reload');
 
     }
 

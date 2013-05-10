@@ -55,6 +55,7 @@ header {
   padding:10px 0 6px;
   box-shadow:0px 2px 3px 0px #a0a0a0;
   -webkit-box-shadow:0px 2px 3px 0px #a0a0a0;
+  z-index:100;
   section {
     width:900px;
     margin:0 auto;
@@ -65,7 +66,6 @@ header {
 #container {
   width:900px;
   max-width:1200px;
-  min-height:350px;
   margin:0 auto;
 }
 
@@ -139,7 +139,6 @@ header {
   .board {
     display:inline-block;
     width:250px;
-    min-height:87px;
     padding:7px;
     font-size:0.9em;
 
