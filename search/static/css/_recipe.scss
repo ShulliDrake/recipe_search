@@ -76,6 +76,28 @@ header {
   }
 }
 
+.message {
+  color:#666;
+  background-color:#fff;
+  width:370px;
+  margin:50px auto 10px;
+  text-align:center;
+  padding:30px 20px 10px;
+  line-height:2em;
+  border-radius:15px;
+  box-shadow:0 0 5px #ff6666;
+
+  .beta {
+    text-transform:uppercase;
+    font-weight:bold;
+    font-style:italic;
+    padding:10px 0;
+  }
+
+  h1 {
+  }
+}
+
 #search {
   input.q {
     width:250px;
@@ -120,7 +142,6 @@ header {
     border-radius:20px;
     margin:0 15px 15px 0;
     padding: 10px;
-    float:left;
 
     a.thumbnail {
       float:left;
@@ -188,6 +209,12 @@ header {
     }
 
   }
+
+  .no_results {
+    width:500px;
+    margin:0 auto;
+    padding:25px 10px;
+  }
 }
 
 /* fancybox */
@@ -245,14 +272,6 @@ header {
   }
 }
 
-.no_results {
-  width:500px;
-  padding:25px 10px;
-  border-radius:7px;
-  background: rgb(255, 255, 255) transparent; /* fallback */
-  background: rgba(255, 255, 255, 0.8); /* nice browsers */
-}
-
 footer {
   width:900px;
   margin:0 auto;
@@ -275,4 +294,31 @@ footer {
       margin-right:10px;
     }
   }
+}
+
+/**** Masonry Transitions ****/
+
+.masonry,
+.masonry .masonry-brick {
+  -webkit-transition-duration: 0.7s;
+     -moz-transition-duration: 0.7s;
+      -ms-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.masonry {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.masonry .masonry-brick {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
 }

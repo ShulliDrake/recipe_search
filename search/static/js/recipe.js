@@ -109,16 +109,17 @@ RS.views.SearchResultView = Backbone.View.extend({
 	this.collection.bind("reset", this.render, this);
 
 	this.$("#result").masonry({
-	    itemSelector: "li",
-	    isAnimated: true
+	    itemSelector: "li"
 	});
     },
 
     render: function(){
 
+	//TODO - remove initial messaging
+	this.$(".message").hide();
+
 	//TODO - result list selector
 	$("#result ul").html("");
-	$("#result div").remove();
 
 	if (this.collection.length > 0) {
 	    this.collection.each(function(model){
@@ -134,8 +135,10 @@ RS.views.SearchResultView = Backbone.View.extend({
 	    var errorView = new RS.views.ErrorView({
 		model: this.model
 	    });
-	    $("#result").append(errorView.render().$el);
+	    $("#result ul").append(errorView.render().$el);
 	}
+
+	$("body").animate({scrollTop: 40}, "slow");
 
 	this.$("#result").masonry('reload');
 
@@ -144,6 +147,9 @@ RS.views.SearchResultView = Backbone.View.extend({
 });
 
 RS.views.ErrorView = Backbone.View.extend({
+
+    tagName: "li",
+    className: "no_results",
 
     template: _.template($("#NoResultsTemplate").html()),
 
