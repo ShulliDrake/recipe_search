@@ -109,7 +109,8 @@ RS.views.SearchResultView = Backbone.View.extend({
 	this.collection.bind("reset", this.render, this);
 
 	this.$("#result").masonry({
-	    itemSelector: "li"
+	    itemSelector: "li",
+	    isFitWidth: true
 	});
     },
 

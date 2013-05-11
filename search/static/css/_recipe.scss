@@ -125,6 +125,7 @@ header {
 
 #result {
   padding:10px;
+  margin:0 auto;
   border-radius:12px;
   font-size:0.8em;
   color:#333;
@@ -137,10 +138,9 @@ header {
     width:380px;
     background: rgb(255, 255, 255) transparent; /* fallback */
     background: rgba(255, 255, 255, 0.8); /* nice browsers */
-
+    margin:8px;
     box-shadow:0 0 5px #ff6666;
     border-radius:20px;
-    margin:0 15px 15px 0;
     padding: 10px;
 
     a.thumbnail {
@@ -212,8 +212,9 @@ header {
 
   .no_results {
     width:500px;
-    margin:0 auto;
+    margin:20px auto;
     padding:25px 10px;
+    text-align:center;
   }
 }
 

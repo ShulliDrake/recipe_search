@@ -130,25 +130,26 @@ header section {
 /* line 126 */
 #result {
   padding: 10px;
+  margin: 0 auto;
   border-radius: 12px;
   font-size: 0.8em;
   color: #333;
 }
-/* line 132 */
+/* line 133 */
 #result ul {
   overflow: auto;
   padding: 15px 0 0 15px;
 }
-/* line 136 */
+/* line 137 */
 #result li {
   width: 380px;
   background: white transparent;
   /* fallback */
   background: rgba(255, 255, 255, 0.8);
   /* nice browsers */
+  margin: 8px;
   box-shadow: 0 0 5px #ff6666;
   border-radius: 20px;
-  margin: 0 15px 15px 0;
   padding: 10px;
 }
 /* line 146 */
@@ -230,12 +231,13 @@ header section {
 /* line 213 */
 #result .no_results {
   width: 500px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 25px 10px;
+  text-align: center;
 }
 
 /* fancybox */
-/* line 221 */
+/* line 222 */
 .fancybox-overlay {
   background: black transparent;
   /* fallback */
@@ -243,59 +245,59 @@ header section {
   /* nice browsers */
 }
 
-/* line 226 */
+/* line 227 */
 .fancybox-skin .heading {
   font-size: 1.5em;
 }
-/* line 230 */
+/* line 231 */
 .fancybox-skin .main {
   margin-top: 10px;
   overflow: auto;
 }
-/* line 233 */
+/* line 234 */
 .fancybox-skin .main img {
   float: left;
   padding-right: 15px;
 }
-/* line 239 */
+/* line 240 */
 .fancybox-skin .serving {
   font-size: 0.8em;
   font-weight: bold;
   padding-top: 10px;
 }
-/* line 245 */
+/* line 246 */
 .fancybox-skin .time {
   padding-top: 10px;
   font-weight: bold;
   font-size: 0.8em;
 }
-/* line 251 */
+/* line 252 */
 .fancybox-skin .ingredients {
   font-size: 0.9em;
   line-height: 1.3em;
   overflow: auto;
 }
-/* line 255 */
+/* line 256 */
 .fancybox-skin .ingredients ul {
   font-size: 0.8em;
 }
-/* line 257 */
+/* line 258 */
 .fancybox-skin .ingredients ul li {
   border-bottom: 1px dotted #a3a3a3;
   padding: 2px;
 }
-/* line 264 */
+/* line 265 */
 .fancybox-skin .source {
   margin-top: 10px;
 }
-/* line 268 */
+/* line 269 */
 .fancybox-skin .label {
   font-size: 0.8em;
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 275 */
+/* line 276 */
 footer {
   width: 900px;
   margin: 0 auto;
@@ -303,25 +305,25 @@ footer {
   color: #666;
   font-size: 0.8em;
 }
-/* line 282 */
+/* line 283 */
 footer .powered_by {
   text-align: center;
 }
-/* line 286 */
+/* line 287 */
 footer .links {
   border-top: 1px solid #fdd7d7;
   margin-top: 20px;
   padding: 10px 20px;
   overflow: auto;
 }
-/* line 292 */
+/* line 293 */
 footer .links li {
   float: left;
   margin-right: 10px;
 }
 
 /**** Masonry Transitions ****/
-/* line 302 */
+/* line 303 */
 .masonry,
 .masonry .masonry-brick {
   -webkit-transition-duration: 0.7s;
@@ -331,7 +333,7 @@ footer .links li {
   transition-duration: 0.7s;
 }
 
-/* line 310 */
+/* line 311 */
 .masonry {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -340,7 +342,7 @@ footer .links li {
   transition-property: height, width;
 }
 
-/* line 318 */
+/* line 319 */
 .masonry .masonry-brick {
   -webkit-transition-property: left, right, top;
   -moz-transition-property: left, right, top;
