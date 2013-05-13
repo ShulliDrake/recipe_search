@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 
+import random
 import requests
 import simplejson
 
@@ -10,7 +11,7 @@ import simplejson
 def search(request):
 
     return render_to_response("home.html",
-                              {"dish_list":settings.DISH_LIST,
+                              {"dish_list":random.sample(settings.DISH_LIST, 15),
                                "cuisine_list":settings.CUISINE_LIST},
                               context_instance=RequestContext(request))
 
