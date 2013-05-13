@@ -37,7 +37,42 @@ RS.views.MainView = Backbone.View.extend({
 	    model: this.model,
 	    collection: this.collection
 	});
+
+	var quickLinksView = new RS.views.QuickLinksView({
+	    el: $(".quick_search"),
+	    model: this.model,
+	    collection: this.collection
+	});
     }
+});
+
+RS.views.QuickLinksView = Backbone.View.extend({
+    events: {
+	"click ul a" : "searchCuisine"
+    },
+
+    searchCuisine: function(e) {
+	if (!e || !e.target) {
+	    return false;
+	}
+
+	var className = $(e.target).closest('ul').attr('class');
+	var value = $(e.target).html();
+	var dataObj = {};
+	if (className === 'by_cuisine') {
+	    dataObj = {cuisine:value.toLowerCase()};
+	} else {
+	    dataObj = {q:value.toLowerCase()};
+	}
+
+	this.collection.fetch({
+	    reset:true,
+	    data:dataObj
+	});
+
+	return false;
+    }
+
 });
 
 RS.models.CollectionModel = Backbone.Model.extend({

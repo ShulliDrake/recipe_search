@@ -104,12 +104,38 @@ header section {
   padding: 10px 0;
 }
 
+/* quick search list */
 /* line 102 */
+.quick_search {
+  padding: 5px 30px;
+  line-height: 1.3em;
+  font-size: 0.8em;
+}
+/* line 107 */
+.quick_search .heading {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* line 111 */
+.quick_search ul {
+  margin: 2px 0 10px;
+}
+/* line 114 */
+.quick_search li {
+  display: inline-block;
+  margin: 0 5px;
+}
+/* line 119 */
+.quick_search a:hover {
+  text-decoration: underline;
+}
+
+/* line 125 */
 #search input.q {
   width: 250px;
   font-size: 0.9em;
 }
-/* line 108 */
+/* line 131 */
 #search button {
   cursor: pointer;
   color: #fff;
@@ -127,7 +153,7 @@ header section {
   background: -o-linear-gradient(top, #fb9d9d, #fa5858);
 }
 
-/* line 126 */
+/* line 149 */
 #result {
   padding: 10px;
   margin: 0 auto;
@@ -135,12 +161,12 @@ header section {
   font-size: 0.8em;
   color: #333;
 }
-/* line 133 */
+/* line 156 */
 #result ul {
   overflow: auto;
   padding: 15px 0 0 15px;
 }
-/* line 137 */
+/* line 160 */
 #result li {
   width: 380px;
   background: white transparent;
@@ -152,28 +178,28 @@ header section {
   border-radius: 20px;
   padding: 10px;
 }
-/* line 146 */
+/* line 169 */
 #result li a.thumbnail {
   float: left;
   margin-top: 8px;
   margin-right: 5px;
 }
-/* line 151 */
+/* line 174 */
 #result li a.thumbnail img {
   display: block;
 }
-/* line 155 */
+/* line 178 */
 #result li a.thumbnail:hover {
   box-shadow: 0 0 5px #fa5858;
 }
-/* line 160 */
+/* line 183 */
 #result .board {
   display: inline-block;
   width: 250px;
   padding: 7px;
   font-size: 0.9em;
 }
-/* line 166 */
+/* line 189 */
 #result .board .name {
   color: #DF3C3C;
   font-size: 1.2em;
@@ -183,52 +209,52 @@ header section {
   padding-bottom: 5px;
   margin-top: -3px;
 }
-/* line 174 */
+/* line 197 */
 #result .board .name a:hover {
   text-decoration: underline;
 }
-/* line 178 */
+/* line 201 */
 #result .board .source {
   margin-top: 3px;
 }
-/* line 181 */
+/* line 204 */
 #result .board .rating {
   padding-top: 5px;
 }
-/* line 183 */
+/* line 206 */
 #result .board .rating span {
   display: block;
   width: 76px;
   height: 17px;
   background: url("/static/img/stars.png") no-repeat;
 }
-/* line 189 */
+/* line 212 */
 #result .board .rating .star4 {
   background-position: center -17px;
 }
-/* line 192 */
+/* line 215 */
 #result .board .rating .star3 {
   background-position: center -32px;
 }
-/* line 195 */
+/* line 218 */
 #result .board .rating .star2 {
   background-position: center -48px;
 }
-/* line 198 */
+/* line 221 */
 #result .board .rating .star1 {
   background-position: center -64px;
 }
-/* line 202 */
+/* line 225 */
 #result .board .ingredients {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 207 */
+/* line 230 */
 #result .board .label {
   font-weight: bold;
 }
-/* line 213 */
+/* line 236 */
 #result .no_results {
   width: 500px;
   margin: 20px auto;
@@ -237,7 +263,7 @@ header section {
 }
 
 /* fancybox */
-/* line 222 */
+/* line 245 */
 .fancybox-overlay {
   background: black transparent;
   /* fallback */
@@ -245,59 +271,59 @@ header section {
   /* nice browsers */
 }
 
-/* line 227 */
+/* line 250 */
 .fancybox-skin .heading {
   font-size: 1.5em;
 }
-/* line 231 */
+/* line 254 */
 .fancybox-skin .main {
   margin-top: 10px;
   overflow: auto;
 }
-/* line 234 */
+/* line 257 */
 .fancybox-skin .main img {
   float: left;
   padding-right: 15px;
 }
-/* line 240 */
+/* line 263 */
 .fancybox-skin .serving {
   font-size: 0.8em;
   font-weight: bold;
   padding-top: 10px;
 }
-/* line 246 */
+/* line 269 */
 .fancybox-skin .time {
   padding-top: 10px;
   font-weight: bold;
   font-size: 0.8em;
 }
-/* line 252 */
+/* line 275 */
 .fancybox-skin .ingredients {
   font-size: 0.9em;
   line-height: 1.3em;
   overflow: auto;
 }
-/* line 256 */
+/* line 279 */
 .fancybox-skin .ingredients ul {
   font-size: 0.8em;
 }
-/* line 258 */
+/* line 281 */
 .fancybox-skin .ingredients ul li {
   border-bottom: 1px dotted #a3a3a3;
   padding: 2px;
 }
-/* line 265 */
+/* line 288 */
 .fancybox-skin .source {
   margin-top: 10px;
 }
-/* line 269 */
+/* line 292 */
 .fancybox-skin .label {
   font-size: 0.8em;
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 276 */
+/* line 299 */
 footer {
   width: 900px;
   margin: 0 auto;
@@ -305,25 +331,25 @@ footer {
   color: #666;
   font-size: 0.8em;
 }
-/* line 283 */
+/* line 306 */
 footer .powered_by {
   text-align: center;
 }
-/* line 287 */
+/* line 310 */
 footer .links {
   border-top: 1px solid #fdd7d7;
   margin-top: 20px;
   padding: 10px 20px;
   overflow: auto;
 }
-/* line 293 */
+/* line 316 */
 footer .links li {
   float: left;
   margin-right: 10px;
 }
 
 /**** Masonry Transitions ****/
-/* line 303 */
+/* line 326 */
 .masonry,
 .masonry .masonry-brick {
   -webkit-transition-duration: 0.7s;
@@ -333,7 +359,7 @@ footer .links li {
   transition-duration: 0.7s;
 }
 
-/* line 311 */
+/* line 334 */
 .masonry {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -342,7 +368,7 @@ footer .links li {
   transition-property: height, width;
 }
 
-/* line 319 */
+/* line 342 */
 .masonry .masonry-brick {
   -webkit-transition-property: left, right, top;
   -moz-transition-property: left, right, top;
