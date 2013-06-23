@@ -6,7 +6,7 @@
 
 /* line 7 */
 body {
-  font-family: Arial,Helvetica,sans-serif;
+  font-family: 'Quattrocento Sans',sans-serif;
   font-size: 1em;
   background: url("/static/img/bg.png") repeat;
 }
@@ -25,7 +25,7 @@ ul, ol {
 /* line 23 */
 h1, h2 {
   color: #fa5858;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: "Courgette", "Lucida Grande", sans-serif;
   margin-bottom: 10px;
 }
 
@@ -113,7 +113,7 @@ header section {
 }
 /* line 107 */
 .quick_search .heading {
-  font-weight: bold;
+  font-style: italic;
   margin-bottom: 10px;
 }
 /* line 111 */
@@ -201,60 +201,59 @@ header section {
 }
 /* line 189 */
 #result .board .name {
+  font-family: "Courgette", cursive;
   color: #DF3C3C;
   font-size: 1.2em;
-  font-style: italic;
-  font-weight: bold;
-  text-shadow: #cccccc 1px 1px;
   padding-bottom: 5px;
   margin-top: -3px;
 }
-/* line 197 */
+/* line 195 */
 #result .board .name a:hover {
   text-decoration: underline;
 }
-/* line 201 */
+/* line 199 */
 #result .board .source {
   margin-top: 3px;
 }
-/* line 204 */
+/* line 202 */
 #result .board .rating {
   padding-top: 5px;
 }
-/* line 206 */
+/* line 204 */
 #result .board .rating span {
   display: block;
   width: 76px;
   height: 17px;
   background: url("/static/img/stars.png") no-repeat;
 }
-/* line 212 */
+/* line 210 */
 #result .board .rating .star4 {
   background-position: center -17px;
 }
-/* line 215 */
+/* line 213 */
 #result .board .rating .star3 {
   background-position: center -32px;
 }
-/* line 218 */
+/* line 216 */
 #result .board .rating .star2 {
   background-position: center -48px;
 }
-/* line 221 */
+/* line 219 */
 #result .board .rating .star1 {
   background-position: center -64px;
 }
-/* line 225 */
+/* line 223 */
 #result .board .ingredients {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 230 */
+/* line 228 */
 #result .board .label {
+  font-family: arial, sans-serif;
   font-weight: bold;
 }
-/* line 236 */
+/* line 235 */
 #result .no_results {
   width: 500px;
   margin: 20px auto;
@@ -263,7 +262,7 @@ header section {
 }
 
 /* fancybox */
-/* line 245 */
+/* line 244 */
 .fancybox-overlay {
   background: black transparent;
   /* fallback */
@@ -271,23 +270,24 @@ header section {
   /* nice browsers */
 }
 
-/* line 250 */
+/* line 249 */
 .fancybox-skin .heading {
   font-size: 1.5em;
 }
-/* line 254 */
+/* line 253 */
 .fancybox-skin .main {
   margin-top: 10px;
   overflow: auto;
 }
-/* line 257 */
+/* line 256 */
 .fancybox-skin .main img {
   float: left;
   padding-right: 15px;
 }
-/* line 263 */
+/* line 262 */
 .fancybox-skin .serving {
   font-size: 0.8em;
+  font-style: italic;
   font-weight: bold;
   padding-top: 10px;
 }
