@@ -4,8 +4,16 @@
   <div class="board">
     <div class="name"><a href="#"><%= recipeName %></a></div>
     <div class="ingredients"><span class="label">{% trans "Ingredients:" %}</span> <%= ingredients%></div>
+    <% if (sourceDisplayName) { %>
     <div class="source"><span class="label">{% trans "From:"%}</span> <%= sourceDisplayName %></div>
+    <% } %>
     <div class="rating"><span class="star<%= rating %>"></span></div>
+    <% if(flavors && flavors.piquant && flavors.piquant > 0.8) { %>
+    <div class="spicy">Spicy</div>
+    <% } %>
+    <% if(flavors && flavors.meaty && flavors.meaty > 0.9) { %>
+    <div class="spicy">meaty</div>
+    <% } %>
   </div>
 </script>
 

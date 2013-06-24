@@ -200,6 +200,7 @@ header {
       margin-top:3px;
     }
     .rating {
+      display:inline-block;
       padding-top:5px;
       span {
         display:block;
@@ -219,6 +220,15 @@ header {
       .star1 {
         background-position:center -64px;
       }
+    }
+    .spicy {
+      display:inline-block;
+      background-color:#dc3519;
+      color:#fff;
+      border-radius:3px;
+      padding:3px;
+      vertical-align:text-bottom;
+      margin:2px;
     }
     .ingredients {
       white-space: nowrap;

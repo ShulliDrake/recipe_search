@@ -217,43 +217,54 @@ header section {
 }
 /* line 202 */
 #result .board .rating {
+  display: inline-block;
   padding-top: 5px;
 }
-/* line 204 */
+/* line 205 */
 #result .board .rating span {
   display: block;
   width: 76px;
   height: 17px;
   background: url("/static/img/stars.png") no-repeat;
 }
-/* line 210 */
+/* line 211 */
 #result .board .rating .star4 {
   background-position: center -17px;
 }
-/* line 213 */
+/* line 214 */
 #result .board .rating .star3 {
   background-position: center -32px;
 }
-/* line 216 */
+/* line 217 */
 #result .board .rating .star2 {
   background-position: center -48px;
 }
-/* line 219 */
+/* line 220 */
 #result .board .rating .star1 {
   background-position: center -64px;
 }
-/* line 223 */
+/* line 224 */
+#result .board .spicy {
+  display: inline-block;
+  background-color: #dc3519;
+  color: #fff;
+  border-radius: 3px;
+  padding: 3px;
+  vertical-align: text-bottom;
+  margin: 2px;
+}
+/* line 233 */
 #result .board .ingredients {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 228 */
+/* line 238 */
 #result .board .label {
   font-family: arial, sans-serif;
   font-weight: bold;
 }
-/* line 235 */
+/* line 245 */
 #result .no_results {
   width: 500px;
   margin: 20px auto;
@@ -262,7 +273,7 @@ header section {
 }
 
 /* fancybox */
-/* line 244 */
+/* line 254 */
 .fancybox-overlay {
   background: black transparent;
   /* fallback */
@@ -270,60 +281,60 @@ header section {
   /* nice browsers */
 }
 
-/* line 249 */
+/* line 259 */
 .fancybox-skin .heading {
   font-size: 1.5em;
 }
-/* line 253 */
+/* line 263 */
 .fancybox-skin .main {
   margin-top: 10px;
   overflow: auto;
 }
-/* line 256 */
+/* line 266 */
 .fancybox-skin .main img {
   float: left;
   padding-right: 15px;
 }
-/* line 262 */
+/* line 272 */
 .fancybox-skin .serving {
   font-size: 0.8em;
   font-style: italic;
   font-weight: bold;
   padding-top: 10px;
 }
-/* line 269 */
+/* line 279 */
 .fancybox-skin .time {
   padding-top: 10px;
   font-weight: bold;
   font-size: 0.8em;
 }
-/* line 275 */
+/* line 285 */
 .fancybox-skin .ingredients {
   font-size: 0.9em;
   line-height: 1.3em;
   overflow: auto;
 }
-/* line 279 */
+/* line 289 */
 .fancybox-skin .ingredients ul {
   font-size: 0.8em;
 }
-/* line 281 */
+/* line 291 */
 .fancybox-skin .ingredients ul li {
   border-bottom: 1px dotted #a3a3a3;
   padding: 2px;
 }
-/* line 288 */
+/* line 298 */
 .fancybox-skin .source {
   margin-top: 10px;
 }
-/* line 292 */
+/* line 302 */
 .fancybox-skin .label {
   font-size: 0.8em;
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 299 */
+/* line 309 */
 footer {
   width: 900px;
   margin: 0 auto;
@@ -331,25 +342,25 @@ footer {
   color: #666;
   font-size: 0.8em;
 }
-/* line 306 */
+/* line 316 */
 footer .powered_by {
   text-align: center;
 }
-/* line 310 */
+/* line 320 */
 footer .links {
   border-top: 1px solid #fdd7d7;
   margin-top: 20px;
   padding: 10px 20px;
   overflow: auto;
 }
-/* line 316 */
+/* line 326 */
 footer .links li {
   float: left;
   margin-right: 10px;
 }
 
 /**** Masonry Transitions ****/
-/* line 326 */
+/* line 336 */
 .masonry,
 .masonry .masonry-brick {
   -webkit-transition-duration: 0.7s;
@@ -359,7 +370,7 @@ footer .links li {
   transition-duration: 0.7s;
 }
 
-/* line 334 */
+/* line 344 */
 .masonry {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -368,7 +379,7 @@ footer .links li {
   transition-property: height, width;
 }
 
-/* line 342 */
+/* line 352 */
 .masonry .masonry-brick {
   -webkit-transition-property: left, right, top;
   -moz-transition-property: left, right, top;
